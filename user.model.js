@@ -16,12 +16,9 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model("User", userSchema);
 
-User.deleteMany({})
-  .then(() => console.log("Cleared Database"))
-  .catch((err) => console.log("Failed to delete", err));
-
-User.insertMany(data)
-  .then(() => console.log("Sample data inserted"))
-  .catch((err) => console.error("Error inserting sample data", err));
+// data inserted using this
+// User.insertMany(data)
+//   .then(() => console.log("Sample data inserted"))
+//   .catch((err) => console.error("Error inserting sample data", err));
 
 module.exports = User;
